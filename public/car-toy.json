@@ -1,0 +1,172 @@
+[
+    {
+      "id": 1,
+      "picture_url": "https://example.com/toy1.jpg",
+      "toy_name": "Toy 1",
+      "seller_name": "John Doe",
+      "seller_email": "john.doe@example.com",
+      "category": "Action Figures",
+      "sub_categories": [
+        {
+          "id": 1,
+          "name": "Superheroes",
+          "toy_name": "Superhero Figure",
+          "picture_url": "https://example.com/superhero.jpg",
+          "price": 19.99,
+          "rating": 4.5,
+          "details": "Superhero Figure is a highly detailed action figure with incredible articulation. It comes with various interchangeable accessories and is suitable for ages 5 and above."
+        },
+        {
+          "id": 2,
+          "name": "Animals",
+          "toy_name": "Animal Figure",
+          "picture_url": "https://example.com/animal.jpg",
+          "price": 14.99,
+          "rating": 4.2,
+          "details": "Animal Figure is a collection of lifelike animal figures. Each figure is hand-painted and made from high-quality materials, perfect for animal enthusiasts of all ages."
+        },
+        {
+          "id": 3,
+          "name": "Robots",
+          "toy_name": "Robot Toy",
+          "picture_url": "https://example.com/robot.jpg",
+          "price": 24.99,
+          "rating": 4.8,
+          "details": "Robot Toy is an interactive robot that can walk, talk, and perform various actions. It features voice recognition and programmable movements, providing hours of robotic fun."
+        }
+      ],
+      "price": 19.99,
+      "rating": 4.5,
+      "available_quantity": 10,
+      "description": "Toy 1 is an action figure with realistic features and movable limbs. It comes with accessories and is suitable for children aged 5 and above."
+    },
+    {
+      "id": 2,
+      "picture_url": "https://example.com/toy2.jpg",
+      "toy_name": "Toy 2",
+      "seller_name": "Jane Smith",
+      "seller_email": "jane.smith@example.com",
+      "category": "Dolls",
+      "sub_categories": [
+        {
+          "id": 4,
+          "name": "Fashion Dolls",
+          "toy_name": "Fashion Doll",
+          "picture_url": "https://example.com/fashion-doll.jpg",
+          "price": 14.99,
+          "rating": 4.2,
+          "details": "Fashion Doll is a stylish doll with trendy outfits and accessories. It comes with a dressing room playset, allowing kids to create fashionable looks and stories."
+        },
+        {
+          "id": 5,
+          "name": "Baby Dolls",
+          "toy_name": "Baby Doll",
+          "picture_url": "https://example.com/baby-doll.jpg",
+          "price": 9.99,
+          "rating": 4.6,
+          "details": "Baby Doll is an adorable doll with realistic features and soft body. It includes accessories such as a bottle and pacifier, providing nurturing play for young children."
+        }
+      ],
+      "price": 14.99,
+      "rating": 4.2,
+      "available_quantity": 5,
+      "description": "Toy 2 is a beautiful doll with long hair and a variety of fashionable outfits. It also includes accessories for dressing up and styling the doll's hair."
+    },
+    {
+      "id": 3,
+      "picture_url": "https://example.com/toy3.jpg",
+      "toy_name": "Toy 3",
+      "seller_name": "Mike Johnson",
+      "seller_email": "mike.johnson@example.com",
+      "category": "Puzzles",
+      "sub_categories": [
+        {
+          "id": 6,
+          "name": "Jigsaw Puzzles",
+          "toy_name": "Jigsaw Puzzle",
+          "picture_url": "https://example.com/jigsaw-puzzle.jpg",
+          "price": 9.99,
+          "rating": 4.8,
+          "details": "Jigsaw Puzzle is a challenging puzzle with 1000 pieces. It features a beautiful landscape and high-quality printing, providing hours of entertainment for puzzle enthusiasts."
+        },
+        {
+          "id": 7,
+          "name": "3D Puzzles",
+          "toy_name": "3D Puzzle",
+          "picture_url": "https://example.com/3d-puzzle.jpg",
+          "price": 12.99,
+          "rating": 4.4,
+          "details": "3D Puzzle is an innovative puzzle that allows you to build three-dimensional structures. It stimulates spatial reasoning and comes with detailed instructions for assembly."
+        }
+      ],
+      "price": 9.99,
+      "rating": 4.8,
+      "available_quantity": 8,
+      "description": "Toy 3 is a challenging puzzle with 500 pieces. It features a beautiful landscape and is perfect for improving problem-solving skills in both kids and adults."
+    },
+    {
+      "id": 4,
+      "picture_url": "https://example.com/toy4.jpg",
+      "toy_name": "Toy 4",
+      "seller_name": "Sarah Lee",
+      "seller_email": "sarah.lee@example.com",
+      "category": "Building Blocks",
+      "sub_categories": [
+        {
+          "id": 8,
+          "name": "Basic Blocks",
+          "toy_name": "Basic Building Blocks",
+          "picture_url": "https://example.com/basic-blocks.jpg",
+          "price": 24.99,
+          "rating": 4.6,
+          "details": "Basic Building Blocks is a set of classic building blocks in various shapes and colors. It encourages imaginative play and helps develop fine motor skills in children."
+        },
+        {
+          "id": 9,
+          "name": "Magnetic Blocks",
+          "toy_name": "Magnetic Building Blocks",
+          "picture_url": "https://example.com/magnetic-blocks.jpg",
+          "price": 29.99,
+          "rating": 4.9,
+          "details": "Magnetic Building Blocks are magnetic tiles that allow children to create structures with ease. The strong magnets ensure stability, making it ideal for constructing tall buildings."
+        }
+      ],
+      "price": 24.99,
+      "rating": 4.6,
+      "available_quantity": 3,
+      "description": "Toy 4 is a set of building blocks that allow children to construct various structures. It stimulates creativity and helps develop fine motor skills."
+    },
+    {
+      "id": 5,
+      "picture_url": "https://example.com/toy5.jpg",
+      "toy_name": "Toy 5",
+      "seller_name": "Robert Davis",
+      "seller_email": "robert.davis@example.com",
+      "category": "Vehicles",
+      "sub_categories": [
+        {
+          "id": 10,
+          "name": "Cars",
+          "toy_name": "Toy Car",
+          "picture_url": "https://example.com/toy-car.jpg",
+          "price": 12.99,
+          "rating": 4.4,
+          "details": "Toy Car is a collection of miniature cars with realistic designs. Each car features smooth-rolling wheels and is made from durable materials, ensuring long-lasting fun."
+        },
+        {
+          "id": 11,
+          "name": "Trucks",
+          "toy_name": "Toy Truck",
+          "picture_url": "https://example.com/toy-truck.jpg",
+          "price": 16.99,
+          "rating": 4.7,
+          "details": "Toy Truck is a rugged truck toy that can haul various objects. It comes with movable parts and detachable accessories, providing an immersive play experience."
+        }
+      ],
+      "price": 12.99,
+      "rating": 4.4,
+      "available_quantity": 12,
+      "description": "Toy 5 is a collection of toy vehicles including cars, trucks, and helicopters. It provides hours of fun and imaginative play for kids of all ages."
+    }
+  ]
+  
