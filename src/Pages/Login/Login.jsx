@@ -2,6 +2,16 @@ import { Link } from "react-router-dom";
 import { FaGoogle } from "react-icons/fa";
 
 const Login = () => {
+
+    const handleLogin = (event) => {
+        event.preventDefault();
+
+        const form = event.target;
+        const email = form.email.value;
+        const password = form.password.value;
+        console.log(email, password);
+    }
+
   return (
     <div className="hero min-h-screen bg-base-200">
       <div className="hero-content flex-col">
@@ -9,7 +19,7 @@ const Login = () => {
           <h1 className="text-5xl font-bold mb-5">Please Log in!</h1>
         </div>
         <div className="card w-full shadow-2xl bg-base-100">
-          <form className="card-body">
+          <form onSubmit={handleLogin} className="card-body">
             <div className="form-control">
               <label className="label">
                 <span className="label-text">Email</span>
