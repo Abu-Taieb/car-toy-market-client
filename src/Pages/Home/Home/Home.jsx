@@ -2,6 +2,8 @@ import slide1 from "../../../assets/1.jpg";
 import slide2 from "../../../assets/2.jpeg";
 import slide3 from "../../../assets/3.jpg";
 import slide4 from "../../../assets/4.jpg";
+import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
+import "react-tabs/style/react-tabs.css";
 
 const Home = () => {
   return (
@@ -61,45 +63,61 @@ const Home = () => {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5 py-10">
             <div className="bg-white p-5 rounded-xl">
-                <img className="rounded-xl w-full" src={slide1} alt="" />
+              <img className="rounded-xl w-full" src={slide1} alt="" />
             </div>
             <div className="bg-white p-5 rounded-xl">
-                <img className="rounded-xl w-full" src={slide1} alt="" />
+              <img className="rounded-xl w-full" src={slide1} alt="" />
             </div>
             <div className="bg-white p-5 rounded-xl">
-                <img className="rounded-xl w-full" src={slide1} alt="" />
+              <img className="rounded-xl w-full" src={slide1} alt="" />
             </div>
             <div className="bg-white p-5 rounded-xl">
-                <img className="rounded-xl w-full" src={slide1} alt="" />
+              <img className="rounded-xl w-full" src={slide1} alt="" />
             </div>
             <div className="bg-white p-5 rounded-xl">
-                <img className="rounded-xl w-full" src={slide1} alt="" />
+              <img className="rounded-xl w-full" src={slide1} alt="" />
             </div>
             <div className="bg-white p-5 rounded-xl">
-                <img className="rounded-xl w-full" src={slide1} alt="" />
+              <img className="rounded-xl w-full" src={slide1} alt="" />
             </div>
             <div className="bg-white p-5 rounded-xl">
-                <img className="rounded-xl w-full" src={slide1} alt="" />
+              <img className="rounded-xl w-full" src={slide1} alt="" />
             </div>
             <div className="bg-white p-5 rounded-xl">
-                <img className="rounded-xl w-full" src={slide1} alt="" />
+              <img className="rounded-xl w-full" src={slide1} alt="" />
             </div>
             <div className="bg-white p-5 rounded-xl">
-                <img className="rounded-xl w-full" src={slide1} alt="" />
+              <img className="rounded-xl w-full" src={slide1} alt="" />
             </div>
             <div className="bg-white p-5 rounded-xl">
-                <img className="rounded-xl w-full" src={slide1} alt="" />
+              <img className="rounded-xl w-full" src={slide1} alt="" />
             </div>
             <div className="bg-white p-5 rounded-xl">
-                <img className="rounded-xl w-full" src={slide1} alt="" />
+              <img className="rounded-xl w-full" src={slide1} alt="" />
             </div>
             <div className="bg-white p-5 rounded-xl">
-                <img className="rounded-xl w-full" src={slide1} alt="" />
+              <img className="rounded-xl w-full" src={slide1} alt="" />
             </div>
           </div>
         </div>
-        <div className="">
-            
+        <div className=" w-full mx-auto bg-base-200">
+          <Tabs>
+            <TabList >
+              <Tab>Title 1</Tab>
+              <Tab>Title 2</Tab>
+              <Tab>Title 3</Tab>
+            </TabList>
+
+            <TabPanel>
+              <h2>Any content 1</h2>
+            </TabPanel>
+            <TabPanel>
+              <h2>Any content 2</h2>
+            </TabPanel>
+            <TabPanel>
+              <h2>Any content 3</h2>
+            </TabPanel>
+          </Tabs>
         </div>
       </div>
     </>
