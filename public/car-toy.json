@@ -1,7 +1,7 @@
 [
     {
       "id": 1,
-      "picture_url": "https://example.com/toy1.jpg",
+      "picture_url": "https://images.unsplash.com/photo-1584641911870-6196a92c1920?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80",
       "toy_name": "Toy 1",
       "seller_name": "John Doe",
       "seller_email": "john.doe@example.com",
@@ -11,7 +11,7 @@
           "id": 1,
           "name": "Superheroes",
           "toy_name": "Superhero Figure",
-          "picture_url": "https://example.com/superhero.jpg",
+          "picture_url": "https://media.istockphoto.com/id/182176558/photo/teal-toy-car-on-white-background.jpg?s=1024x1024&w=is&k=20&c=ffCqtnFpkoAud43tGEPfHVtZEmqBHqeA4CqMGPa619U=",
           "price": 19.99,
           "rating": 4.5,
           "details": "Superhero Figure is a highly detailed action figure with incredible articulation. It comes with various interchangeable accessories and is suitable for ages 5 and above."
@@ -20,7 +20,7 @@
           "id": 2,
           "name": "Animals",
           "toy_name": "Animal Figure",
-          "picture_url": "https://example.com/animal.jpg",
+          "picture_url": "https://images.unsplash.com/photo-1536454891705-7f5a5c762d3a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=381&q=80",
           "price": 14.99,
           "rating": 4.2,
           "details": "Animal Figure is a collection of lifelike animal figures. Each figure is hand-painted and made from high-quality materials, perfect for animal enthusiasts of all ages."
@@ -29,7 +29,7 @@
           "id": 3,
           "name": "Robots",
           "toy_name": "Robot Toy",
-          "picture_url": "https://example.com/robot.jpg",
+          "picture_url": "https://images.unsplash.com/photo-1572635196184-84e35138cf62?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=580&q=80",
           "price": 24.99,
           "rating": 4.8,
           "details": "Robot Toy is an interactive robot that can walk, talk, and perform various actions. It features voice recognition and programmable movements, providing hours of robotic fun."
@@ -42,7 +42,7 @@
     },
     {
       "id": 2,
-      "picture_url": "https://example.com/toy2.jpg",
+      "picture_url": "https://images.unsplash.com/photo-1531693251400-38df35776dc7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80",
       "toy_name": "Toy 2",
       "seller_name": "Jane Smith",
       "seller_email": "jane.smith@example.com",
@@ -52,7 +52,7 @@
           "id": 4,
           "name": "Fashion Dolls",
           "toy_name": "Fashion Doll",
-          "picture_url": "https://example.com/fashion-doll.jpg",
+          "picture_url": "https://media.istockphoto.com/id/106576629/photo/red-toy-truck.jpg?s=1024x1024&w=is&k=20&c=v8eMYI4cbfig5yli58gVOSr88M-qEZWdkdlTo3O4eIA=",
           "price": 14.99,
           "rating": 4.2,
           "details": "Fashion Doll is a stylish doll with trendy outfits and accessories. It comes with a dressing room playset, allowing kids to create fashionable looks and stories."
@@ -74,7 +74,7 @@
     },
     {
       "id": 3,
-      "picture_url": "https://example.com/toy3.jpg",
+      "picture_url": "https://images.unsplash.com/photo-1456082902841-3335005c3082?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80",
       "toy_name": "Toy 3",
       "seller_name": "Mike Johnson",
       "seller_email": "mike.johnson@example.com",
@@ -106,7 +106,7 @@
     },
     {
       "id": 4,
-      "picture_url": "https://example.com/toy4.jpg",
+      "picture_url": "https://images.unsplash.com/photo-1508896694512-1eade558679c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80",
       "toy_name": "Toy 4",
       "seller_name": "Sarah Lee",
       "seller_email": "sarah.lee@example.com",
@@ -138,7 +138,7 @@
     },
     {
       "id": 5,
-      "picture_url": "https://example.com/toy5.jpg",
+      "picture_url": "https://images.unsplash.com/photo-1594787318286-3d835c1d207f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80",
       "toy_name": "Toy 5",
       "seller_name": "Robert Davis",
       "seller_email": "robert.davis@example.com",
