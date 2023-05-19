@@ -1,5 +1,5 @@
 import slide1 from "../../../assets/1.jpg";
-import slide2 from "../../../assets/2.jpeg";
+import slide2 from "../../../assets/2.jpg";
 import slide3 from "../../../assets/3.jpg";
 import slide4 from "../../../assets/4.jpg";
 

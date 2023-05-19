@@ -1,7 +1,7 @@
 [
   {
     "_id": 1,
-    "picture_url": "https://images.unsplash.com/photo-1584641911870-6196a92c1920?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80",
+    "picture_url": "../src/assets/category/c1.jpg",
     "toy_name": "Toy 1",
     "seller_name": "John Doe",
     "seller_email": "john.doe@example.com",
@@ -11,7 +11,7 @@
         "_id": 1,
         "name": "Superheroes",
         "toy_name": "Superhero Figure",
-        "picture_url": "https://images.unsplash.com/photo-1594787318286-3d835c1d207f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80",
+        "picture_url": "../src/assets/category/c1.jpg",
         "price": 19.99,
         "rating": 4.5,
         "details": "Superhero Figure is a highly detailed action figure with incredible articulation. It comes with various interchangeable accessories and is suitable for ages 5 and above."
@@ -20,7 +20,7 @@
         "_id": 2,
         "name": "Animals",
         "toy_name": "Animal Figure",
-        "picture_url": "https://images.unsplash.com/photo-1536454891705-7f5a5c762d3a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=381&q=80",
+        "picture_url": "../src/assets/category/c2.jpg",
         "price": 14.99,
         "rating": 4.2,
         "details": "Animal Figure is a collection of lifelike animal figures. Each figure is hand-painted and made from high-quality materials, perfect for animal enthusiasts of all ages."
@@ -29,7 +29,7 @@
         "_id": 3,
         "name": "Robots",
         "toy_name": "Robot Toy",
-        "picture_url": "https://images.unsplash.com/photo-1609708536965-6e5b915b195b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=465&q=80",
+        "picture_url": "../src/assets/category/c3.jpg",
         "price": 24.99,
         "rating": 4.8,
         "details": "Robot Toy is an interactive robot that can walk, talk, and perform various actions. It features voice recognition and programmable movements, providing hours of robotic fun."
@@ -52,7 +52,7 @@
         "_id": 4,
         "name": "Fashion Dolls",
         "toy_name": "Fashion Doll",
-        "picture_url": "https://images.unsplash.com/photo-1572635196184-84e35138cf62?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=580&q=80",
+        "picture_url": "../src/assets/category/c4.jpg",
         "price": 14.99,
         "rating": 4.2,
         "details": "Fashion Doll is a stylish doll with trendy outfits and accessories. It comes with a dressing room playset, allowing kids to create fashionable looks and stories."
@@ -61,7 +61,7 @@
         "_id": 5,
         "name": "Baby Dolls",
         "toy_name": "Baby Doll",
-        "picture_url": "https://images.unsplash.com/photo-1508896694512-1eade558679c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80",
+        "picture_url": "../src/assets/category/c5.jpg",
         "price": 9.99,
         "rating": 4.6,
         "details": "Baby Doll is an adorable doll with realistic features and soft body. It includes accessories such as a bottle and pacifier, providing nurturing play for young children."
@@ -70,7 +70,7 @@
         "_id": 6,
         "name": "Cute Dolls",
         "toy_name": "Cute Doll",
-        "picture_url": "https://images.unsplash.com/photo-1592916485147-1e38fc823d21?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80",
+        "picture_url": "../src/assets/category/c6.jpg",
         "price": 39.99,
         "rating": 4.9,
         "details": "Cute Doll is an adorable doll with realistic features and soft body. It includes accessories such as a bottle and pacifier, providing nurturing play for young children."
