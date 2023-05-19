@@ -69,7 +69,7 @@ const Navbar = () => {
         </div>
         <div className="navbar-end">
           <div className="tooltip tooltip-bottom" data-tip="hello">
-            <button className="btn">Log In</button>
+            <Link to={'login'}><button className="btn">Log In</button></Link>
           </div>
         </div>
       </div>
