@@ -1,4 +1,4 @@
-const Addtoys = () => {
+const AddToys = () => {
     return (
         <div>
             <h2>Add A Toys</h2>
@@ -6,4 +6,4 @@ const Addtoys = () => {
     );
 };
 
-export default Addtoys;
+export default AddToys;

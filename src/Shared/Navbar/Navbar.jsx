@@ -1,7 +1,11 @@
 import { Link } from "react-router-dom";
 import logo from "../../assets/car-toy-market.png";
+import { useContext } from "react";
+import { AuthContext } from "../../Pages/Provider/AuthProvider";
 
 const Navbar = () => {
+  const user = useContext(AuthContext)
+  console.log(user);
   return (
     <>
       <div className="navbar bg-base-200 px-5 py-5">
@@ -64,6 +68,9 @@ const Navbar = () => {
             </li>
             <li>
               <Link to={"blogs"}>Blogs</Link>
+            </li>
+            <li>
+              <a className="text-green-500" href="">A{user && <span>{user.email}</span> }</a>
             </li>
           </ul>
         </div>

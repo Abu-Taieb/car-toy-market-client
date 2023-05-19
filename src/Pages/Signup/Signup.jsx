@@ -1,28 +1,48 @@
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../Provider/AuthProvider";
 
 const Signup = () => {
+  const [error, setError] = useState("");
+  const [success, setSuccess] = useState("");
 
-  const {createUser} = useContext(AuthContext);
-
+  const { createUser } = useContext(AuthContext);
 
   const handleSignUp = (event) => {
     event.preventDefault();
 
     const form = event.target;
+    const name = form.name.value;
     const email = form.email.value;
     const password = form.password.value;
-    console.log(email, password);
+    console.log(name, email, password);
 
     createUser(email, password)
-    .then(result => {
-      const user = result.user;
-      console.log(user);
-    })
-    .catch(error => {
-      console.log(error.message);
-    })
+      .then((result) => {
+        const user = result.user;
+        setSuccess('User registration successful');
+        form.reset();
+      })
+      .catch((error) => {
+        setError(error.message);
+      });
+
+    // Validation
+    setError('');
+    setSuccess('');
+
+    if (!/(?=.*[A-Z])/.test(password)) {
+      setError("Please add at least one uppercase.");
+      return;
+    } else if (!/(?=.*[!@#$&*])/.test(password)) {
+      setError("Please add a special character");
+      return;
+    } else if (password.length < 6) {
+      setError("Password minimum 6 character.");
+      return;
+    }
+
+
 
   };
 
@@ -51,7 +71,7 @@ const Signup = () => {
                 <span className="label-text">Email</span>
               </label>
               <input
-                type="text"
+                type="email"
                 name="email"
                 placeholder="email"
                 className="input input-bordered"
@@ -63,7 +83,7 @@ const Signup = () => {
                 <span className="label-text">Password</span>
               </label>
               <input
-                type="text"
+                type="password"
                 name="password"
                 placeholder="password"
                 className="input input-bordered"
@@ -75,7 +95,7 @@ const Signup = () => {
                 <span className="label-text">Photo URL</span>
               </label>
               <input
-                type="text"
+                type="file"
                 placeholder="photo url"
                 className="input input-bordered"
                 required
@@ -84,6 +104,8 @@ const Signup = () => {
             <div className="form-control mt-6">
               <button className="btn btn-primary">Register</button>
             </div>
+            <p className="text-red-600">{error}</p>
+            <p className="text-green-600">{success}</p>
           </form>
           <div className="">
             <h5 className="text-center my-5">

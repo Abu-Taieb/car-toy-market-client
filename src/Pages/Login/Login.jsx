@@ -1,9 +1,14 @@
 import { Link } from "react-router-dom";
 import { FaGoogle } from "react-icons/fa";
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { AuthContext } from "../Provider/AuthProvider";
+// import { sendEmailVerification } from "firebase/auth";
 
 const Login = () => {
+  const [error, setError] = useState("");
+  const [success, setSuccess] = useState("");
+  
+
   const { signIn, signInGoogle } = useContext(AuthContext);
 
   const handleGoogleLogin = () => {
@@ -11,10 +16,13 @@ const Login = () => {
       .then((result) => {
         const user = result.user;
         console.log(user);
+        setSuccess('Successfully log in with google');
       })
       .catch((error) => {
-        console.log(error.message);
+        setError(error.message);
       });
+      setError('');
+      setSuccess('');
   };
 
   // Log in with email & password
@@ -24,16 +32,29 @@ const Login = () => {
     const form = event.target;
     const email = form.email.value;
     const password = form.password.value;
-    console.log(email, password);
     signIn(email, password)
       .then((result) => {
         const user = result.user;
-        console.log(user);
+        setSuccess('Successfully log in');
+        form.reset();
+        // sendVerificationEmail(user)
       })
       .catch((error) => {
-        console.log(error.message);
+        setError(error.message);
       });
+      setError('');
+      setSuccess('');
   };
+
+// Email Verification 
+  // const sendVerificationEmail = (user) => {
+  //   sendEmailVerification(user)
+  //   .then(result => {
+  //     console.log(result);
+  //     alert('Please verify your email')
+  //   })
+  // }
+
 
   return (
     <div className="hero min-h-screen bg-base-200">
@@ -70,6 +91,8 @@ const Login = () => {
             <div className="form-control mt-6">
               <button className="btn btn-primary">Login</button>
             </div>
+            <p className="text-green-600">{success}</p>
+            <p className="text-red-600">{error}</p>
           </form>
           <div className="flex items-center gap-5 justify-center">
             <h5 className="text-center font-semibold">Log in With</h5>

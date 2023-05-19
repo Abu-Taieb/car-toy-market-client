@@ -9,19 +9,18 @@ import {
 import { createContext, useEffect, useState } from "react";
 import app from "../../firebase/firebase.config";
 
-export const AuthContext = createContext();
+export const AuthContext = createContext(null);
 const auth = getAuth(app);
 
 const AuthProvider = ({ children }) => {
   const [user, setUser] = useState(null);
   const [loading, setLoading] = useState(true);
 
-// Sign in with google 
-const provider = new GoogleAuthProvider()
-const signInGoogle = () => {
-  return signInWithPopup(auth, provider)
-}
-
+  // Sign in with google
+  const provider = new GoogleAuthProvider();
+  const signInGoogle = () => {
+    return signInWithPopup(auth, provider);
+  };
 
   // Create User
   const createUser = (email, password) => {
@@ -37,9 +36,9 @@ const signInGoogle = () => {
 
   // Current user
   useEffect(() => {
-    const unsubscribe = onAuthStateChanged(auth, (currentUser) => {
-      setUser(currentUser);
-      console.log("Current User", currentUser);
+    const unsubscribe = onAuthStateChanged(auth, (user) => {
+      setUser(user);
+      console.log("Current User", user);
       setLoading(false);
     });
     return () => {
