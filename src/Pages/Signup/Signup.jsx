@@ -94,12 +94,7 @@ const Signup = () => {
               <label className="label">
                 <span className="label-text">Photo URL</span>
               </label>
-              <input
-                type="file"
-                placeholder="photo url"
-                className="input input-bordered"
-                required
-              />
+              <input type="file" className="file-input file-input-bordered file-input-sm w-full max-w-xs" />
             </div>
             <div className="form-control mt-6">
               <button className="btn btn-primary">Register</button>
