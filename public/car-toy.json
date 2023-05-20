@@ -1,6 +1,5 @@
 [
   {
-    "_id": 1,
     "picture_url": "../src/assets/category/c1.jpg",
     "toy_name": "Toy 1",
     "seller_name": "John Doe",
@@ -8,7 +7,6 @@
     "category": "Action Figures",
     "sub_categories": [
       {
-        "_id": 1,
         "name": "Superheroes",
         "toy_name": "Superhero Figure",
         "picture_url": "../src/assets/category/c1.jpg",
@@ -17,7 +15,6 @@
         "details": "Superhero Figure is a highly detailed action figure with incredible articulation. It comes with various interchangeable accessories and is suitable for ages 5 and above."
       },
       {
-        "_id": 2,
         "name": "Animals",
         "toy_name": "Animal Figure",
         "picture_url": "../src/assets/category/c2.jpg",
@@ -26,7 +23,6 @@
         "details": "Animal Figure is a collection of lifelike animal figures. Each figure is hand-painted and made from high-quality materials, perfect for animal enthusiasts of all ages."
       },
       {
-        "_id": 3,
         "name": "Robots",
         "toy_name": "Robot Toy",
         "picture_url": "../src/assets/category/c3.jpg",
@@ -41,7 +37,6 @@
     "description": "Toy 1 is an action figure with realistic features and movable limbs. It comes with accessories and is suitable for children aged 5 and above."
   },
   {
-    "_id": 2,
     "picture_url": "https://images.unsplash.com/photo-1581235720704-06d3acfcb36f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=580&q=80",
     "toy_name": "Toy 2",
     "seller_name": "Jane Smith",
@@ -49,7 +44,6 @@
     "category": "Dolls",
     "sub_categories": [
       {
-        "_id": 4,
         "name": "Fashion Dolls",
         "toy_name": "Fashion Doll",
         "picture_url": "../src/assets/category/c4.jpg",
@@ -58,7 +52,6 @@
         "details": "Fashion Doll is a stylish doll with trendy outfits and accessories. It comes with a dressing room playset, allowing kids to create fashionable looks and stories."
       },
       {
-        "_id": 5,
         "name": "Baby Dolls",
         "toy_name": "Baby Doll",
         "picture_url": "../src/assets/category/c5.jpg",
@@ -67,7 +60,6 @@
         "details": "Baby Doll is an adorable doll with realistic features and soft body. It includes accessories such as a bottle and pacifier, providing nurturing play for young children."
       },
       {
-        "_id": 6,
         "name": "Cute Dolls",
         "toy_name": "Cute Doll",
         "picture_url": "../src/assets/category/c6.jpg",
@@ -82,7 +74,6 @@
     "description": "Toy 2 is a beautiful doll with long hair and a variety of fashionable outfits. It also includes accessories for dressing up and styling the doll's hair."
   },
   {
-    "_id": 3,
     "picture_url": "https://images.unsplash.com/photo-1534732806146-b3bf32171b48?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80",
     "toy_name": "Toy 3",
     "seller_name": "Mike Johnson",
@@ -90,7 +81,6 @@
     "category": "Puzzles",
     "sub_categories": [
       {
-        "_id": 7,
         "name": "Jigsaw Puzzles",
         "toy_name": "Jigsaw Puzzle",
         "picture_url": "https://images.unsplash.com/photo-1456082902841-3335005c3082?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80",
@@ -99,7 +89,6 @@
         "details": "Jigsaw Puzzle is a challenging puzzle with 1000 pieces. It features a beautiful landscape and high-quality printing, providing hours of entertainment for puzzle enthusiasts."
       },
       {
-        "_id": 8,
         "name": "3D Puzzles",
         "toy_name": "3D Puzzle",
         "picture_url": "https://images.unsplash.com/photo-1626023772800-eadff10c0f9a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80",
@@ -108,7 +97,6 @@
         "details": "3D Puzzle is an innovative puzzle that allows you to build three-dimensional structures. It stimulates spatial reasoning and comes with detailed instructions for assembly."
       },
       {
-        "_id": 9,
         "name": "4K Puzzles",
         "toy_name": "4K Puzzle",
         "picture_url": "https://images.unsplash.com/photo-1531693251400-38df35776dc7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80",

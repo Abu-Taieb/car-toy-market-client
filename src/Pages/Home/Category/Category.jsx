@@ -1,13 +1,12 @@
 import { useEffect, useState } from "react";
-// import CategoryCard from "./CategoryCard";
-import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
+import CategoryCard from "./CategoryCard";
+// import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 
 const Category = () => {
   const [catagories, setCategory] = useState([]);
 
-  console.log(catagories[1]);
   useEffect(() => {
-    fetch("car-toy.json")
+    fetch("http://localhost:5000/toys")
       .then((res) => res.json())
       .then((data) => setCategory(data));
   }, []);
@@ -20,7 +19,13 @@ const Category = () => {
             Shop by Category
           </h2>
         </div>
-        <div className="">
+        <div className="flex gap-5 justify-center">
+          {catagories.map((catagory) => (
+            <CategoryCard key={catagory._id} catagory={catagory}></CategoryCard>
+          ))}
+        </div>
+
+        {/* <div className="">
           <Tabs>
             <TabList>
               <Tab>{catagories[0]?.category}</Tab>
@@ -48,7 +53,7 @@ const Category = () => {
                       {catagories[0]?.sub_categories[0]?.rating}
                     </h2>
                     <div className="card-actions">
-                      <button className="btn btn-primary">Buy Now</button>
+                      <button className="btn bg-[#FF0126] border-0">View Details</button>
                     </div>
                   </div>
                 </div>
@@ -71,7 +76,7 @@ const Category = () => {
                       {catagories[0]?.sub_categories[1]?.rating}
                     </h2>
                     <div className="card-actions">
-                      <button className="btn btn-primary">Buy Now</button>
+                      <button className="btn bg-[#FF0126] border-0">View Details</button>
                     </div>
                   </div>
                 </div>
@@ -94,7 +99,7 @@ const Category = () => {
                       {catagories[0]?.sub_categories[2]?.rating}
                     </h2>
                     <div className="card-actions">
-                      <button className="btn btn-primary">Buy Now</button>
+                      <button className="btn bg-[#FF0126] border-0">View Details</button>
                     </div>
                   </div>
                 </div>
@@ -121,7 +126,7 @@ const Category = () => {
                       {catagories[1]?.sub_categories[0]?.rating}
                     </h2>
                     <div className="card-actions">
-                      <button className="btn btn-primary">Buy Now</button>
+                      <button className="btn bg-[#FF0126] border-0">View Details</button>
                     </div>
                   </div>
                 </div>
@@ -144,7 +149,7 @@ const Category = () => {
                       {catagories[1]?.sub_categories[1]?.rating}
                     </h2>
                     <div className="card-actions">
-                      <button className="btn btn-primary">Buy Now</button>
+                      <button className="btn bg-[#FF0126] border-0">View Details</button>
                     </div>
                   </div>
                 </div>
@@ -167,7 +172,7 @@ const Category = () => {
                       {catagories[1]?.sub_categories[2]?.rating}
                     </h2>
                     <div className="card-actions">
-                      <button className="btn btn-primary">Buy Now</button>
+                      <button className="btn bg-[#FF0126] border-0">View Details</button>
                     </div>
                   </div>
                 </div>
@@ -194,7 +199,7 @@ const Category = () => {
                       {catagories[2]?.sub_categories[0]?.rating}
                     </h2>
                     <div className="card-actions">
-                      <button className="btn btn-primary">Buy Now</button>
+                      <button className="btn bg-[#FF0126] border-0">View Details</button>
                     </div>
                   </div>
                 </div>
@@ -217,7 +222,7 @@ const Category = () => {
                       {catagories[2]?.sub_categories[1]?.rating}
                     </h2>
                     <div className="card-actions">
-                      <button className="btn btn-primary">Buy Now</button>
+                      <button className="btn bg-[#FF0126] border-0">View Details</button>
                     </div>
                   </div>
                 </div>
@@ -240,14 +245,14 @@ const Category = () => {
                       {catagories[2]?.sub_categories[2]?.rating}
                     </h2>
                     <div className="card-actions">
-                      <button className="btn btn-primary">Buy Now</button>
+                      <button className="btn bg-[#FF0126] border-0">View Details</button>
                     </div>
                   </div>
                 </div>
               </div>
             </TabPanel>
           </Tabs>
-        </div>
+        </div> */}
       </div>
     </>
   );

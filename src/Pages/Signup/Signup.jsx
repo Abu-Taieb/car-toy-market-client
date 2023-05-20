@@ -20,6 +20,7 @@ const Signup = () => {
     createUser(email, password)
       .then((result) => {
         const user = result.user;
+        console.log(user);
         setSuccess('User registration successful');
         form.reset();
       })
@@ -107,7 +108,7 @@ const Signup = () => {
               Already have an Account?{" "}
               <Link className="font-bold text-red-600" to={"/login"}>
                 Log in
-              </Link>{" "}
+              </Link>
             </h5>
           </div>
         </div>

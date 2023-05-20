@@ -35,6 +35,7 @@ const Login = () => {
     signIn(email, password)
       .then((result) => {
         const user = result.user;
+        console.log(user);
         setSuccess('Successfully log in');
         form.reset();
         // sendVerificationEmail(user)
@@ -111,7 +112,7 @@ const Login = () => {
               Are you new Car toy Market?{" "}
               <Link className="font-bold text-red-600" to={"/signup"}>
                 Sign up
-              </Link>{" "}
+              </Link>
             </h5>
           </div>
         </div>
