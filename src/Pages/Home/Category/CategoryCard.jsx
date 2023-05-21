@@ -3,33 +3,29 @@
 import { Link } from "react-router-dom";
 
 const CategoryCard = ({ catagory }) => {
-  const {_id, toy_name, picture_url, price, rating } = catagory;
-
-  console.log(catagory);
+  const { _id, toy_name, picture_url, price, rating } = catagory;
 
   return (
     <>
-      <div className="card w-96 bg-base-100 shadow-xl">
-        <figure className="px-10 pt-10">
-          <img
-            src={picture_url}
-            alt="Shoes"
-            className="rounded-xl"
-          />
+      <div className="card card-compact w-full bg-base-100 shadow-xl py-10 px-5">
+        <figure>
+          <img src={picture_url} alt="Shoes" className="rounded-xl" />
         </figure>
-        <div className="card-body items-center text-center">
-          <h2 className="card-title">{toy_name}</h2>
-          <h2 className="card-title">{price}</h2>
-          <h2 className="card-title">{rating}</h2>
-          <div className="card-actions">
-            <Link to={`/details/${_id}`}><button className="btn btn-primary">View Details</button></Link>
+        <div className="card-body">
+          <h2 className="card-title">Name: {toy_name}</h2>
+          <h2 className="card-title">Price: {price}</h2>
+          <h2 className="card-title">Rating: {rating}</h2>
+          <div className="card-actions justify-end">
+            <Link to={`/details/${_id}`}>
+              <button className="btn btn-primary">View Details</button>
+            </Link>
           </div>
         </div>
       </div>
 
-{/* Comment  */}
+      {/* Comment  
       <div className="">
-        {/* <Tabs>
+         <Tabs>
                <TabList>
                  <Tab>{toy_name}</Tab>
                </TabList>
@@ -60,8 +56,8 @@ const CategoryCard = ({ catagory }) => {
                    </div>
                  </div>
                </TabPanel>
-             </Tabs> */}
-      </div>
+             </Tabs>
+      </div>*/}
     </>
   );
 };

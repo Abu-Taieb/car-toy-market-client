@@ -13,17 +13,17 @@ const Category = () => {
 
   return (
     <>
-      <div className="text-center py-10">
+      <div className=" py-10">
         <div className="pb-10">
           <h2 className="text-center font-bold text-3xl my-10">
             Shop by Category
           </h2>
         </div>
-        <div className="flex gap-5 justify-center">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
           {catagories.map((catagory) => (
             <CategoryCard key={catagory._id} catagory={catagory}></CategoryCard>
           ))}
-        </div>
+          </div>
 
         {/* <div className="">
           <Tabs>

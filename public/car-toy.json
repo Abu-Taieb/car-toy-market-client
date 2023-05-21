@@ -7,6 +7,7 @@
     "category": "Action Figures",
     "sub_categories": [
       {
+        "_id": 1,
         "name": "Superheroes",
         "toy_name": "Superhero Figure",
         "picture_url": "https://m.media-amazon.com/images/I/61Eq8Kroc3L._AC_UL320_.jpg",
@@ -15,6 +16,7 @@
         "details": "Superhero Figure is a highly detailed action figure with incredible articulation. It comes with various interchangeable accessories and is suitable for ages 5 and above."
       },
       {
+        "_id": 2,
         "name": "Police Gep",
         "toy_name": "Gep Toy",
         "picture_url": "https://m.media-amazon.com/images/I/912ZSagjzAL._AC_UL320_.jpg",
@@ -23,6 +25,7 @@
         "details": "Animal Figure is a collection of lifelike animal figures. Each figure is hand-painted and made from high-quality materials, perfect for animal enthusiasts of all ages."
       },
       {
+        "_id": 3,
         "name": "Police",
         "toy_name": "Police Toy",
         "picture_url": "https://m.media-amazon.com/images/I/71jrSZJjiHL._AC_UL320_.jpg",
@@ -44,6 +47,7 @@
     "category": "Spider",
     "sub_categories": [
       {
+        "_id": 1,
         "name": "Car Spider",
         "toy_name": "Car Spider",
         "picture_url": "https://m.media-amazon.com/images/I/71TMGWer2cL._AC_SX569_.jpg",
@@ -52,6 +56,7 @@
         "details": "Fashion Doll is a stylish doll with trendy outfits and accessories. It comes with a dressing room playset, allowing kids to create fashionable looks and stories."
       },
       {
+        "_id": 2,
         "name": "Small Spider",
         "toy_name": "Small Spider",
         "picture_url": "https://m.media-amazon.com/images/I/718C5X0ubEL._AC_SX569_.jpg",
@@ -60,6 +65,7 @@
         "details": "Baby Doll is an adorable doll with realistic features and soft body. It includes accessories such as a bottle and pacifier, providing nurturing play for young children."
       },
       {
+        "_id": 3,
         "name": "Big Spider",
         "toy_name": "Big Spider",
         "picture_url": "https://m.media-amazon.com/images/I/61wUnGgKJjL._AC_SX569_.jpg",
@@ -81,6 +87,7 @@
     "category": "Puzzles",
     "sub_categories": [
       {
+        "_id": 1,
         "name": "Jigsaw Puzzles",
         "toy_name": "Jigsaw Puzzle",
         "picture_url": "https://m.media-amazon.com/images/I/61Eq8Kroc3L._AC_UL320_.jpg",
@@ -89,6 +96,7 @@
         "details": "Jigsaw Puzzle is a challenging puzzle with 1000 pieces. It features a beautiful landscape and high-quality printing, providing hours of entertainment for puzzle enthusiasts."
       },
       {
+        "_id": 2,
         "name": "3D Puzzles",
         "toy_name": "3D Puzzle",
         "picture_url": "https://m.media-amazon.com/images/I/71jPVjhi3KL._AC_UL320_.jpg",
@@ -97,6 +105,7 @@
         "details": "3D Puzzle is an innovative puzzle that allows you to build three-dimensional structures. It stimulates spatial reasoning and comes with detailed instructions for assembly."
       },
       {
+        "_id": 3,
         "name": "4K Puzzles",
         "toy_name": "4K Puzzle",
         "picture_url": "https://m.media-amazon.com/images/I/713OyM20mxL._AC_UL320_.jpg",
@@ -118,6 +127,7 @@
     "category": "Johnson Puzzles",
     "sub_categories": [
       {
+        "_id": 1,
         "name": "Jigsaw Johnson",
         "toy_name": "Jigsaw Puzzle",
         "picture_url": "https://m.media-amazon.com/images/I/71SLcHvhXQL._AC_UL320_.jpg",
@@ -126,6 +136,7 @@
         "details": "Jigsaw Puzzle is a challenging puzzle with 1000 pieces. It features a beautiful landscape and high-quality printing, providing hours of entertainment for puzzle enthusiasts."
       },
       {
+        "_id": 2,
         "name": "3D Puzzles Johnson",
         "toy_name": "3D Puzzle",
         "picture_url": "https://m.media-amazon.com/images/I/61sTxHv8n6L._AC_UL320_.jpg",
@@ -134,6 +145,7 @@
         "details": "3D Puzzle is an innovative puzzle that allows you to build three-dimensional structures. It stimulates spatial reasoning and comes with detailed instructions for assembly."
       },
       {
+        "_id": 3,
         "name": "Johnson 4K Puzzles",
         "toy_name": "4K Puzzle",
         "picture_url": "https://m.media-amazon.com/images/I/61uKgq9s3tL._AC_UL320_.jpg",
@@ -155,6 +167,7 @@
     "category": "Puzzles",
     "sub_categories": [
       {
+        "_id": 1,
         "name": "Mike Puzzles",
         "toy_name": "Jigsaw Puzzle Mike",
         "picture_url": "https://m.media-amazon.com/images/I/61MVU51RQtL._AC_UL320_.jpg",
@@ -163,6 +176,7 @@
         "details": "Jigsaw Puzzle is a challenging puzzle with 1000 pieces. It features a beautiful landscape and high-quality printing, providing hours of entertainment for puzzle enthusiasts."
       },
       {
+        "_id": 2,
         "name": "3D Mike Puzzles",
         "toy_name": "Mike 3D Puzzle",
         "picture_url": "https://m.media-amazon.com/images/I/612TQp+XU0L._AC_UL320_.jpg",
@@ -171,6 +185,7 @@
         "details": "3D Puzzle is an innovative puzzle that allows you to build three-dimensional structures. It stimulates spatial reasoning and comes with detailed instructions for assembly."
       },
       {
+        "_id": 3,
         "name": "4K Mike Puzzles",
         "toy_name": "4K Puzzle Mike",
         "picture_url": "https://m.media-amazon.com/images/I/61ZkSEQaNcL._AC_UL320_.jpg",
@@ -192,6 +207,7 @@
     "category": "Puzzles",
     "sub_categories": [
       {
+        "_id": 1,
         "name": "Jigsaw Puzzles NwvYZmeL",
         "toy_name": "Jigsaw NwvYZmeL",
         "picture_url": "https://m.media-amazon.com/images/I/61UfTFz5udL._AC_UL320_.jpg",
@@ -200,6 +216,7 @@
         "details": "Jigsaw Puzzle is a challenging puzzle with 1000 pieces. It features a beautiful landscape and high-quality printing, providing hours of entertainment for puzzle enthusiasts."
       },
       {
+        "_id": 2,
         "name": "NwvYZmeL Puzzles",
         "toy_name": "3D Puzzle NwvYZmeL",
         "picture_url": "https://m.media-amazon.com/images/I/71bPxX4MWwL._AC_UL320_.jpg",
@@ -208,6 +225,7 @@
         "details": "3D Puzzle is an NwvYZmeL innovative puzzle that allows you to build three-dimensional structures. It stimulates spatial reasoning and comes with detailed instructions for assembly."
       },
       {
+        "_id": 3,
         "name": "4K NwvYZmeL",
         "toy_name": "NwvYZmeL",
         "picture_url": "https://m.media-amazon.com/images/I/71eTbUiHGGL._AC_UL320_.jpg",

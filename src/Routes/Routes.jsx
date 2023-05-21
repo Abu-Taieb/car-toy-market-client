@@ -8,7 +8,6 @@ import Error from "../Pages/Error/Error";
 import Login from "../Pages/Login/Login";
 import Signup from "../Pages/Signup/Signup";
 import Details from "../Pages/Details/Details";
-import AddToys from "../Pages/AddToys/Addtoys";
 
 const router = createBrowserRouter([
   {
@@ -34,11 +33,6 @@ const router = createBrowserRouter([
       {
         path: "mytoys",
         element: <MyToys></MyToys>,
-      },
-      {
-        path: "addtoys",
-        element: <AddToys></AddToys>,
-        loader: () => fetch(`http://localhost:5000/toys`),
       },
       {
         path: "blogs",
