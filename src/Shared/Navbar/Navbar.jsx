@@ -71,7 +71,7 @@ const Navbar = () => {
               <Link to={"mytoys"}>My Toys</Link>
             </li>
             <li>
-              <Link to={"addtoys"}>Add A Toys</Link>
+              <Link to={"newtoyadd"}>Add A New Toys</Link>
             </li>
             <li>
               <Link to={"blogs"}>Blogs</Link>

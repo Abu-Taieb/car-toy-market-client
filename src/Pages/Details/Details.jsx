@@ -36,7 +36,7 @@ const Details = () => {
             </h4>
             <p><span className="font-bold">Description of this Product :</span> {description}</p>
             <div className="card-actions justify-end mt-10">
-            <Link to={`/add/${_id}`}>
+            <Link to={`/toyadd/${_id}`}>
               <button className="btn btn-primary">Add Toy</button>
             </Link>
             </div>
