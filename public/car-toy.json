@@ -1,6 +1,6 @@
 [
   {
-    "picture_url": "../src/assets/category/c1.jpg",
+    "picture_url": "https://m.media-amazon.com/images/I/71k6XnjuwkL._AC_UL320_.jpg",
     "toy_name": "Toy 1",
     "seller_name": "John Doe",
     "seller_email": "john.doe@example.com",
@@ -9,23 +9,23 @@
       {
         "name": "Superheroes",
         "toy_name": "Superhero Figure",
-        "picture_url": "../src/assets/category/c1.jpg",
+        "picture_url": "https://m.media-amazon.com/images/I/61Eq8Kroc3L._AC_UL320_.jpg",
         "price": 19.99,
         "rating": 4.5,
         "details": "Superhero Figure is a highly detailed action figure with incredible articulation. It comes with various interchangeable accessories and is suitable for ages 5 and above."
       },
       {
-        "name": "Animals",
-        "toy_name": "Animal Figure",
-        "picture_url": "../src/assets/category/c2.jpg",
+        "name": "Police Gep",
+        "toy_name": "Gep Toy",
+        "picture_url": "https://m.media-amazon.com/images/I/912ZSagjzAL._AC_UL320_.jpg",
         "price": 14.99,
         "rating": 4.2,
         "details": "Animal Figure is a collection of lifelike animal figures. Each figure is hand-painted and made from high-quality materials, perfect for animal enthusiasts of all ages."
       },
       {
-        "name": "Robots",
-        "toy_name": "Robot Toy",
-        "picture_url": "../src/assets/category/c3.jpg",
+        "name": "Police",
+        "toy_name": "Police Toy",
+        "picture_url": "https://m.media-amazon.com/images/I/71jrSZJjiHL._AC_UL320_.jpg",
         "price": 24.99,
         "rating": 4.8,
         "details": "Robot Toy is an interactive robot that can walk, talk, and perform various actions. It features voice recognition and programmable movements, providing hours of robotic fun."
@@ -37,32 +37,32 @@
     "description": "Toy 1 is an action figure with realistic features and movable limbs. It comes with accessories and is suitable for children aged 5 and above."
   },
   {
-    "picture_url": "https://images.unsplash.com/photo-1581235720704-06d3acfcb36f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=580&q=80",
-    "toy_name": "Toy 2",
+    "picture_url": "https://m.media-amazon.com/images/I/71geWBM2XwL._AC_UL320_.jpg",
+    "toy_name": "Toy Private",
     "seller_name": "Jane Smith",
     "seller_email": "jane.smith@example.com",
-    "category": "Dolls",
+    "category": "Spider",
     "sub_categories": [
       {
-        "name": "Fashion Dolls",
-        "toy_name": "Fashion Doll",
-        "picture_url": "../src/assets/category/c4.jpg",
+        "name": "Car Spider",
+        "toy_name": "Car Spider",
+        "picture_url": "https://m.media-amazon.com/images/I/71TMGWer2cL._AC_SX569_.jpg",
         "price": 14.99,
         "rating": 4.2,
         "details": "Fashion Doll is a stylish doll with trendy outfits and accessories. It comes with a dressing room playset, allowing kids to create fashionable looks and stories."
       },
       {
-        "name": "Baby Dolls",
-        "toy_name": "Baby Doll",
-        "picture_url": "../src/assets/category/c5.jpg",
+        "name": "Small Spider",
+        "toy_name": "Small Spider",
+        "picture_url": "https://m.media-amazon.com/images/I/718C5X0ubEL._AC_SX569_.jpg",
         "price": 9.99,
         "rating": 4.6,
         "details": "Baby Doll is an adorable doll with realistic features and soft body. It includes accessories such as a bottle and pacifier, providing nurturing play for young children."
       },
       {
-        "name": "Cute Dolls",
-        "toy_name": "Cute Doll",
-        "picture_url": "../src/assets/category/c6.jpg",
+        "name": "Big Spider",
+        "toy_name": "Big Spider",
+        "picture_url": "https://m.media-amazon.com/images/I/61wUnGgKJjL._AC_SX569_.jpg",
         "price": 39.99,
         "rating": 4.9,
         "details": "Cute Doll is an adorable doll with realistic features and soft body. It includes accessories such as a bottle and pacifier, providing nurturing play for young children."
@@ -74,8 +74,8 @@
     "description": "Toy 2 is a beautiful doll with long hair and a variety of fashionable outfits. It also includes accessories for dressing up and styling the doll's hair."
   },
   {
-    "picture_url": "https://images.unsplash.com/photo-1534732806146-b3bf32171b48?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80",
-    "toy_name": "Toy 3",
+    "picture_url": "https://m.media-amazon.com/images/I/71-NwvYZmeL._AC_UL320_.jpg",
+    "toy_name": "Container Toy",
     "seller_name": "Mike Johnson",
     "seller_email": "mike.johnson@example.com",
     "category": "Puzzles",
@@ -83,7 +83,7 @@
       {
         "name": "Jigsaw Puzzles",
         "toy_name": "Jigsaw Puzzle",
-        "picture_url": "https://images.unsplash.com/photo-1456082902841-3335005c3082?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80",
+        "picture_url": "https://m.media-amazon.com/images/I/61Eq8Kroc3L._AC_UL320_.jpg",
         "price": 9.99,
         "rating": 4.8,
         "details": "Jigsaw Puzzle is a challenging puzzle with 1000 pieces. It features a beautiful landscape and high-quality printing, providing hours of entertainment for puzzle enthusiasts."
@@ -91,7 +91,7 @@
       {
         "name": "3D Puzzles",
         "toy_name": "3D Puzzle",
-        "picture_url": "https://images.unsplash.com/photo-1626023772800-eadff10c0f9a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80",
+        "picture_url": "https://m.media-amazon.com/images/I/71jPVjhi3KL._AC_UL320_.jpg",
         "price": 12.99,
         "rating": 4.4,
         "details": "3D Puzzle is an innovative puzzle that allows you to build three-dimensional structures. It stimulates spatial reasoning and comes with detailed instructions for assembly."
@@ -99,7 +99,7 @@
       {
         "name": "4K Puzzles",
         "toy_name": "4K Puzzle",
-        "picture_url": "https://images.unsplash.com/photo-1531693251400-38df35776dc7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80",
+        "picture_url": "https://m.media-amazon.com/images/I/713OyM20mxL._AC_UL320_.jpg",
         "price": 27.99,
         "rating": 4.1,
         "details": "4K Puzzle is an innovative puzzle that allows you to build three-dimensional structures. It stimulates spatial reasoning and comes with detailed instructions for assembly."
@@ -109,5 +109,116 @@
     "rating": 4.8,
     "available_quantity": 8,
     "description": "Toy 3 is a challenging puzzle with 500 pieces. It features a beautiful landscape and is perfect for improving problem-solving skills in both kids and adults."
+  },
+  {
+    "picture_url": "https://m.media-amazon.com/images/I/71Yi6unS30L._AC_UL320_.jpg",
+    "toy_name": "Toy Johnson",
+    "seller_name": "Johnson",
+    "seller_email": "johnson@example.com",
+    "category": "Johnson Puzzles",
+    "sub_categories": [
+      {
+        "name": "Jigsaw Johnson",
+        "toy_name": "Jigsaw Puzzle",
+        "picture_url": "https://m.media-amazon.com/images/I/71SLcHvhXQL._AC_UL320_.jpg",
+        "price": 24.99,
+        "rating": 4.8,
+        "details": "Jigsaw Puzzle is a challenging puzzle with 1000 pieces. It features a beautiful landscape and high-quality printing, providing hours of entertainment for puzzle enthusiasts."
+      },
+      {
+        "name": "3D Puzzles Johnson",
+        "toy_name": "3D Puzzle",
+        "picture_url": "https://m.media-amazon.com/images/I/61sTxHv8n6L._AC_UL320_.jpg",
+        "price": 32.99,
+        "rating": 4.4,
+        "details": "3D Puzzle is an innovative puzzle that allows you to build three-dimensional structures. It stimulates spatial reasoning and comes with detailed instructions for assembly."
+      },
+      {
+        "name": "Johnson 4K Puzzles",
+        "toy_name": "4K Puzzle",
+        "picture_url": "https://m.media-amazon.com/images/I/61uKgq9s3tL._AC_UL320_.jpg",
+        "price": 37.99,
+        "rating": 4.1,
+        "details": "4K Puzzle is an innovative puzzle that allows you to build three-dimensional structures. It stimulates spatial reasoning and comes with detailed instructions for assembly."
+      }
+    ],
+    "price": 28.99,
+    "rating": 4.8,
+    "available_quantity": 18,
+    "description": "Toy Johnson is a challenging puzzle with 500 pieces. It features a beautiful landscape and is perfect for improving problem-solving skills in both kids and adults."
+  },
+  {
+    "picture_url": "https://m.media-amazon.com/images/I/71EcaaomDPL._AC_UL320_.jpg",
+    "toy_name": "Toy Mike",
+    "seller_name": "Mike",
+    "seller_email": "mike@example.com",
+    "category": "Puzzles",
+    "sub_categories": [
+      {
+        "name": "Mike Puzzles",
+        "toy_name": "Jigsaw Puzzle Mike",
+        "picture_url": "https://m.media-amazon.com/images/I/61MVU51RQtL._AC_UL320_.jpg",
+        "price": 17.99,
+        "rating": 4.8,
+        "details": "Jigsaw Puzzle is a challenging puzzle with 1000 pieces. It features a beautiful landscape and high-quality printing, providing hours of entertainment for puzzle enthusiasts."
+      },
+      {
+        "name": "3D Mike Puzzles",
+        "toy_name": "Mike 3D Puzzle",
+        "picture_url": "https://m.media-amazon.com/images/I/612TQp+XU0L._AC_UL320_.jpg",
+        "price": 11.99,
+        "rating": 4.4,
+        "details": "3D Puzzle is an innovative puzzle that allows you to build three-dimensional structures. It stimulates spatial reasoning and comes with detailed instructions for assembly."
+      },
+      {
+        "name": "4K Mike Puzzles",
+        "toy_name": "4K Puzzle Mike",
+        "picture_url": "https://m.media-amazon.com/images/I/61ZkSEQaNcL._AC_UL320_.jpg",
+        "price": 35.99,
+        "rating": 4.1,
+        "details": "4K Puzzle is an innovative puzzle that allows you to build three-dimensional structures. It stimulates spatial reasoning and comes with detailed instructions for assembly."
+      }
+    ],
+    "price": 49.99,
+    "rating": 4.8,
+    "available_quantity": 8,
+    "description": "Toy 3 is a challenging puzzle with 500 pieces. It features a beautiful landscape and is perfect for improving problem-solving skills in both kids and adults."
+  },
+  {
+    "picture_url": "https://m.media-amazon.com/images/I/71i2RJ5R3XL._AC_UL320_.jpg",
+    "toy_name": "Toy NwvYZmeL",
+    "seller_name": "NwvYZmeL John",
+    "seller_email": "NwvYZmeL.john@example.com",
+    "category": "Puzzles",
+    "sub_categories": [
+      {
+        "name": "Jigsaw Puzzles NwvYZmeL",
+        "toy_name": "Jigsaw NwvYZmeL",
+        "picture_url": "https://m.media-amazon.com/images/I/61UfTFz5udL._AC_UL320_.jpg",
+        "price": 32.99,
+        "rating": 4.8,
+        "details": "Jigsaw Puzzle is a challenging puzzle with 1000 pieces. It features a beautiful landscape and high-quality printing, providing hours of entertainment for puzzle enthusiasts."
+      },
+      {
+        "name": "NwvYZmeL Puzzles",
+        "toy_name": "3D Puzzle NwvYZmeL",
+        "picture_url": "https://m.media-amazon.com/images/I/71bPxX4MWwL._AC_UL320_.jpg",
+        "price": 25.99,
+        "rating": 4.4,
+        "details": "3D Puzzle is an NwvYZmeL innovative puzzle that allows you to build three-dimensional structures. It stimulates spatial reasoning and comes with detailed instructions for assembly."
+      },
+      {
+        "name": "4K NwvYZmeL",
+        "toy_name": "NwvYZmeL",
+        "picture_url": "https://m.media-amazon.com/images/I/71eTbUiHGGL._AC_UL320_.jpg",
+        "price": 44.99,
+        "rating": 4.1,
+        "details": "4K Puzzle is an NwvYZmeL innovative puzzle that allows you to build three-dimensional structures. It stimulates spatial reasoning and comes with detailed instructions for assembly."
+      }
+    ],
+    "price": 36.99,
+    "rating": 4.8,
+    "available_quantity": 8,
+    "description": "Toy NwvYZmeL is a challenging puzzle with 500 pieces. It features a beautiful landscape and is perfect for improving problem-solving skills in both kids and adults."
   }
 ]

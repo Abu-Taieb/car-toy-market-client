@@ -4,11 +4,11 @@ import Home from "../Pages/Home/Home/Home";
 import Blogs from "../Pages/Blogs/Blogs";
 import AllToys from "../Pages/AllToys/AllToys";
 import MyToys from "../Pages/MyToys/MyToys";
-import Addtoys from "../Pages/AddToys/Addtoys";
 import Error from "../Pages/Error/Error";
 import Login from "../Pages/Login/Login";
 import Signup from "../Pages/Signup/Signup";
 import Details from "../Pages/Details/Details";
+import AddToys from "../Pages/AddToys/Addtoys";
 
 const router = createBrowserRouter([
   {
@@ -21,7 +21,7 @@ const router = createBrowserRouter([
       },
       {
         path: "signup",
-        element: <Signup></Signup>
+        element: <Signup></Signup>,
       },
       {
         path: "login",
@@ -37,16 +37,19 @@ const router = createBrowserRouter([
       },
       {
         path: "addtoys",
-        element: <Addtoys></Addtoys>,
+        element: <AddToys></AddToys>,
+        loader: () => fetch(`http://localhost:5000/toys`),
       },
       {
         path: "blogs",
         element: <Blogs></Blogs>,
-      },{
-        path: 'details/:id',
+      },
+      {
+        path: "details/:id",
         element: <Details></Details>,
-        loader: ({params}) => fetch(`http://localhost:5000/toys/${params.id}`)
-      }
+        loader: ({ params }) =>
+          fetch(`http://localhost:5000/toys/${params.id}`),
+      },
     ],
   },
   {

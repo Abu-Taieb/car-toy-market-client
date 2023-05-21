@@ -15,7 +15,7 @@ const Details = () => {
   console.log(details);
   return (
     <>
-      <div className="card lg:card-side bg-base-200 shadow-xl m-10 rounded-xl">
+      <div className="card lg:card-side bg-base-200 shadow-xl m-10 rounded-xl p-10">
         <div className=" w-1/2">
           <figure>
             <img className="rounded-xl" src={picture_url} alt="Album" />

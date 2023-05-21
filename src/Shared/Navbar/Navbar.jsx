@@ -79,8 +79,8 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="navbar-end">
-          <div className="tooltip tooltip-bottom" data-tip="hello">
-            {user?.email ? <button onClick={handleLogOut} className="btn">Log Out</button> : <Link to={'/login'}>Log In</Link> }
+          <div className="" >
+            {user?.email ? <button onClick={handleLogOut} className="btn tooltip tooltip-bottom " data-tip={user.displayName ? user.displayName : user.email}>Log Out</button> : <Link to={'/login'}><button className="btn">Log In</button></Link> }
           </div>
         </div>
       </div>
