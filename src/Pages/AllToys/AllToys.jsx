@@ -1,9 +1,50 @@
+import { useContext, useEffect, useState } from "react";
+import { AuthContext } from "../Provider/AuthProvider";
+import AllToysRows from "./AllToysRows";
+
 const AllToys = () => {
-    return (
-        <div>
-            <h2>All Toys</h2>
-        </div>
-    );
+  const { user } = useContext(AuthContext);
+  const [allToys, setAllToys] = useState([]);
+
+  console.log(user);
+
+  const url = `http://localhost:5000/addNewToy`;
+  useEffect(() => {
+    fetch(url)
+      .then((res) => res.json())
+      .then((data) => setAllToys(data));
+  }, [url]);
+
+
+
+  return (
+    <div className="bg-base-200 px-5">
+      <h2 className="text-center font-bold text-3xl py-10">All Users Toys</h2>
+      <div className="overflow-x-auto w-full rounded-xl">
+        <table className="table w-full rounded-xl">
+          {/* head */}
+          <thead>
+            <tr>
+              <th>Toys</th>
+              <th>Seller Name</th>
+              <th>Sub Category</th>
+              <th>Price</th>
+              <th>Available Qty</th>
+              <th>Click Here</th>
+            </tr>
+          </thead>
+
+          {/* row 1 */}
+          {allToys.map((allToy) => (
+            <AllToysRows
+              key={allToy?._id}
+              allToy={allToy}
+            ></AllToysRows>
+          ))}
+        </table>
+      </div>
+    </div>
+  );
 };
 
 export default AllToys;

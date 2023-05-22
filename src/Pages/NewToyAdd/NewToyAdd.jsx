@@ -45,7 +45,9 @@ const NewToyAdd = () => {
       if(data.insertedId){
         alert('Toy Added')
       }
+      
     })
+    form.reset();
 
 
   };

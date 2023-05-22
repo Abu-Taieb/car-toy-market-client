@@ -4,7 +4,7 @@ const Contact = () => {
       <h2 className="text-center font-bold text-3xl my-10">Contact Us</h2>
       <div className="bg-white flex flex-col lg:flex-row justify-evenly p-10 rounded-xl">
         <div className="w-full lg:w-1/3 mr-10 flex items-center">
-          <h2 className="text-5xl text-black font-bold">If you interested! Please feel free to contact with us.</h2>
+          <h2 className="text-5xl text-black font-bold pb-10 ">If you interested! Please feel free to contact with us.</h2>
         </div>
         <div className="flex flex-col md:flex-row bg-base-content p-10 gap-10 rounded-xl w-full lg:w-2/3">
           <div className="text-white w-full lg:w-1/2">

@@ -1,5 +1,4 @@
 const MyToysRow = ({ addNewToy, handleDelete }) => {
-  console.log(addNewToy._id);
   const {
     _id,
     picture,
@@ -65,7 +64,7 @@ const MyToysRow = ({ addNewToy, handleDelete }) => {
         <td>{quantity}</td>
         <td>{message}</td>
         <th>
-          <button className="btn btn-ghost btn-xs">Update</button>
+          <button className="btn btn-primary btn-sm">Update</button>
         </th>
       </tr>
     </tbody>

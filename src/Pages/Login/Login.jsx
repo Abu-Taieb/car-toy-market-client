@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { FaGoogle } from "react-icons/fa";
 import { useContext, useState } from "react";
 import { AuthContext } from "../Provider/AuthProvider";
@@ -7,9 +7,12 @@ import { AuthContext } from "../Provider/AuthProvider";
 const Login = () => {
   const [error, setError] = useState("");
   const [success, setSuccess] = useState("");
-  
 
   const { signIn, signInGoogle } = useContext(AuthContext);
+  const location = useLocation();
+
+  const navigate = useNavigate();
+  const from = location.state?.from?.pathname || '/';
 
   const handleGoogleLogin = () => {
     signInGoogle()
@@ -38,6 +41,7 @@ const Login = () => {
         console.log(user);
         setSuccess('Successfully log in');
         form.reset();
+        navigate(from, {replace: true} )
         // sendVerificationEmail(user)
       })
       .catch((error) => {
@@ -82,7 +86,7 @@ const Login = () => {
                 <span className="label-text">Password</span>
               </label>
               <input
-                type="text"
+                type="password"
                 name="password"
                 placeholder="password"
                 className="input input-bordered"

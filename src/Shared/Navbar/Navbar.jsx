@@ -67,13 +67,18 @@ const Navbar = () => {
             <li>
               <Link to={"alltoys"}>All Toys</Link>
             </li>
-            {
-            user?.email ? (
+            {user?.email ? (
               <>
-                <li><Link to={"mytoys"}>My Toys</Link></li>
-                <li><Link to={"newtoyadd"}>Add A New Toys</Link></li>
-              </>) : ("")
-            }
+                <li>
+                  <Link to={"mytoys"}>My Toys</Link>
+                </li>
+                <li>
+                  <Link to={"newtoyadd"}>Add A New Toys</Link>
+                </li>
+              </>
+            ) : (
+              ""
+            )}
 
             <li>
               <Link to={"blogs"}>Blogs</Link>
@@ -82,14 +87,18 @@ const Navbar = () => {
         </div>
         <div className="navbar-end">
           <div className="">
-            {user?.email ? (
-              <button
-                onClick={handleLogOut}
-                className="btn tooltip tooltip-bottom "
-                data-tip={user.displayName ? user.displayName : user.email}
-              >
-                Log Out
-              </button>
+            {user ? (
+              <div className="flex gap-5 items-center">
+                <button className="avatar tooltip tooltip-bottom" data-tip={user.displayName ? user.displayName : user.email}>
+                  <div className="w-12 rounded-full">
+                    <img src={user.photoURL} alt=""/>
+                  </div>
+                </button>
+
+                <button onClick={handleLogOut} className="btn btn-sm ">
+                  Log Out
+                </button>
+              </div>
             ) : (
               <Link to={"/login"}>
                 <button className="btn">Log In</button>

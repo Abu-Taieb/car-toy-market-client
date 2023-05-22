@@ -1,8 +1,18 @@
 // import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 
+import { useContext } from "react";
 import { Link } from "react-router-dom";
+import { AuthContext } from "../../Provider/AuthProvider";
 
 const CategoryCard = ({ catagory }) => {
+  const { user } = useContext(AuthContext);
+
+  const details = () => {
+    if (!user) {
+      alert("You have to log in first to view details");
+    }
+  };
+
   const { _id, toy_name, picture_url, price, rating } = catagory;
 
   return (
@@ -17,7 +27,9 @@ const CategoryCard = ({ catagory }) => {
           <h2 className="card-title">Rating: {rating}</h2>
           <div className="card-actions justify-end">
             <Link to={`/details/${_id}`}>
-              <button className="btn btn-primary">View Details</button>
+              <button onClick={details} className="btn btn-primary">
+                View Details
+              </button>
             </Link>
           </div>
         </div>

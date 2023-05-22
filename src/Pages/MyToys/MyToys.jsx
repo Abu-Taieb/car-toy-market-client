@@ -51,7 +51,7 @@ const MyToys = () => {
               <th>Rating</th>
               <th>Available Qty</th>
               <th>Details</th>
-              <th>Details</th>
+              <th>Edit</th>
             </tr>
           </thead>
 
