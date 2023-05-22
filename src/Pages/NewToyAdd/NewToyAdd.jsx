@@ -30,7 +30,7 @@ const NewToyAdd = () => {
       message,
     };
 
-    console.log(addNewToy);
+    // console.log(addNewToy);
 
     fetch('http://localhost:5000/addNewToy', {
       method: 'POST',
@@ -41,7 +41,7 @@ const NewToyAdd = () => {
     })
     .then( res => res.json())
     .then( data => {
-      console.log(data);
+      // console.log(data);
       if(data.insertedId){
         alert('Toy Added')
       }

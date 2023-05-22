@@ -4,14 +4,14 @@ import { useContext } from "react";
 import { AuthContext } from "../../Pages/Provider/AuthProvider";
 
 const Navbar = () => {
-  const {user, logOut} = useContext(AuthContext)
+  const { user, logOut } = useContext(AuthContext);
   console.log(user);
 
   const handleLogOut = () => {
     logOut()
-    .then(() => {})
-    .catch(error => console.log(error.message))
-  }
+      .then(() => {})
+      .catch((error) => console.log(error.message));
+  };
 
   return (
     <>
@@ -56,8 +56,8 @@ const Navbar = () => {
             </ul>
           </div>
           <Link to={"/"}>
-              <img src='https://ibb.co/jLQ14v7' alt="" />
-            </Link>
+            <img src="https://ibb.co/jLQ14v7" alt="" />
+          </Link>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">
@@ -67,20 +67,34 @@ const Navbar = () => {
             <li>
               <Link to={"alltoys"}>All Toys</Link>
             </li>
-            <li>
-              <Link to={"mytoys"}>My Toys</Link>
-            </li>
-            <li>
-              <Link to={"newtoyadd"}>Add A New Toys</Link>
-            </li>
+            {
+            user?.email ? (
+              <>
+                <li><Link to={"mytoys"}>My Toys</Link></li>
+                <li><Link to={"newtoyadd"}>Add A New Toys</Link></li>
+              </>) : ("")
+            }
+
             <li>
               <Link to={"blogs"}>Blogs</Link>
             </li>
           </ul>
         </div>
         <div className="navbar-end">
-          <div className="" >
-            {user?.email ? <button onClick={handleLogOut} className="btn tooltip tooltip-bottom " data-tip={user.displayName ? user.displayName : user.email}>Log Out</button> : <Link to={'/login'}><button className="btn">Log In</button></Link> }
+          <div className="">
+            {user?.email ? (
+              <button
+                onClick={handleLogOut}
+                className="btn tooltip tooltip-bottom "
+                data-tip={user.displayName ? user.displayName : user.email}
+              >
+                Log Out
+              </button>
+            ) : (
+              <Link to={"/login"}>
+                <button className="btn">Log In</button>
+              </Link>
+            )}
           </div>
         </div>
       </div>
