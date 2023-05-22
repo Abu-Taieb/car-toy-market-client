@@ -8,7 +8,7 @@ const NewToyAdd = () => {
     event.preventDefault();
 
     const form = event.target;
-    const pUrl = form.link.value;
+    const picture = form.link.value;
     const toyName = form.toyName.value;
     const author = form.name.value;
     const email = form.email.value;
@@ -18,8 +18,8 @@ const NewToyAdd = () => {
     const quantity = parseInt(form.quantity.value);
     const message = form.message.value;
 
-    const add = {
-      pUrl,
+    const addNewToy = {
+      picture,
       toyName,
       author,
       email,
@@ -30,7 +30,24 @@ const NewToyAdd = () => {
       message,
     };
 
-    console.log(add);
+    console.log(addNewToy);
+
+    fetch('http://localhost:5000/addNewToy', {
+      method: 'POST',
+      headers: {
+        'content-type': 'application/json'
+      },
+      body: JSON.stringify(addNewToy)
+    })
+    .then( res => res.json())
+    .then( data => {
+      console.log(data);
+      if(data.insertedId){
+        alert('Toy Added')
+      }
+    })
+
+
   };
     return (
         <div className="px-10 my-16">
