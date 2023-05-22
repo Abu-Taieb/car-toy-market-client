@@ -1,190 +1,68 @@
 import { useContext, useEffect, useState } from "react";
 import { AuthContext } from "../Provider/AuthProvider";
+import MyToysRow from "./MyToysRow";
 
 const MyToys = () => {
-  const [addNewToy, setAddNewToy] = useState([]);
   const { user } = useContext(AuthContext);
+  const [addNewToys, setAddNewToys] = useState([]);
 
-  console.log(user);
+  console.log(addNewToys);
 
   const url = `http://localhost:5000/addNewToy?email=${user?.email}`;
   useEffect(() => {
     fetch(url)
       .then((res) => res.json())
-      .then((data) => setAddNewToy(data));
-  }, []);
+      .then((data) => setAddNewToys(data));
+  }, [url]);
+
+  const handleDelete = (id) => {
+    const proceed = confirm("Are you sure you want to delete?");
+    if (proceed) {
+      fetch(`http://localhost:5000/addNewToy/${id}`, {
+        method: "DELETE",
+      })
+        .then((res) => res.json())
+        .then((data) => {
+          console.log(data);
+          if (data.deletedCount > 0) {
+            alert("Delete Successful");
+            const remaining = addNewToys.filter(
+              (addNewToys) => addNewToys._id !== id
+            );
+            setAddNewToys(remaining);
+          }
+        });
+    }
+  };
 
   return (
-    <div>
-      <h2>My Toys {addNewToy.length}</h2>
-      <div className="overflow-x-auto w-full">
-        <table className="table w-full">
+    <div className="bg-base-200 px-5">
+      <h2 className="text-center font-bold text-3xl py-10">My Won Toys</h2>
+      <div className="overflow-x-auto w-full rounded-xl">
+        <table className="table w-full rounded-xl">
           {/* head */}
           <thead>
             <tr>
-              <th>
-                <label>
-                  <input type="checkbox" className="checkbox" />
-                </label>
-              </th>
-              <th>Name</th>
-              <th>Job</th>
-              <th>Favorite Color</th>
-              <th></th>
+              <th>Delete</th>
+              <th>Toys</th>
+              <th>Seller Name & Email</th>
+              <th>Category</th>
+              <th>Price</th>
+              <th>Rating</th>
+              <th>Available Qty</th>
+              <th>Details</th>
+              <th>Details</th>
             </tr>
           </thead>
-          <tbody>
-            {/* row 1 */}
-            <tr>
-              <th>
-                <label>
-                  <input type="checkbox" className="checkbox" />
-                </label>
-              </th>
-              <td>
-                <div className="flex items-center space-x-3">
-                  <div className="avatar">
-                    <div className="mask mask-squircle w-12 h-12">
-                      <img
-                        src="/tailwind-css-component-profile-2@56w.png"
-                        alt="Avatar Tailwind CSS Component"
-                      />
-                    </div>
-                  </div>
-                  <div>
-                    <div className="font-bold">Hart Hagerty</div>
-                    <div className="text-sm opacity-50">United States</div>
-                  </div>
-                </div>
-              </td>
-              <td>
-                Zemlak, Daniel and Leannon
-                <br />
-                <span className="badge badge-ghost badge-sm">
-                  Desktop Support Technician
-                </span>
-              </td>
-              <td>Purple</td>
-              <th>
-                <button className="btn btn-ghost btn-xs">details</button>
-              </th>
-            </tr>
-            {/* row 2 */}
-            <tr>
-              <th>
-                <label>
-                  <input type="checkbox" className="checkbox" />
-                </label>
-              </th>
-              <td>
-                <div className="flex items-center space-x-3">
-                  <div className="avatar">
-                    <div className="mask mask-squircle w-12 h-12">
-                      <img
-                        src="/tailwind-css-component-profile-3@56w.png"
-                        alt="Avatar Tailwind CSS Component"
-                      />
-                    </div>
-                  </div>
-                  <div>
-                    <div className="font-bold">Brice Swyre</div>
-                    <div className="text-sm opacity-50">China</div>
-                  </div>
-                </div>
-              </td>
-              <td>
-                Carroll Group
-                <br />
-                <span className="badge badge-ghost badge-sm">
-                  Tax Accountant
-                </span>
-              </td>
-              <td>Red</td>
-              <th>
-                <button className="btn btn-ghost btn-xs">details</button>
-              </th>
-            </tr>
-            {/* row 3 */}
-            <tr>
-              <th>
-                <label>
-                  <input type="checkbox" className="checkbox" />
-                </label>
-              </th>
-              <td>
-                <div className="flex items-center space-x-3">
-                  <div className="avatar">
-                    <div className="mask mask-squircle w-12 h-12">
-                      <img
-                        src="/tailwind-css-component-profile-4@56w.png"
-                        alt="Avatar Tailwind CSS Component"
-                      />
-                    </div>
-                  </div>
-                  <div>
-                    <div className="font-bold">Marjy Ferencz</div>
-                    <div className="text-sm opacity-50">Russia</div>
-                  </div>
-                </div>
-              </td>
-              <td>
-                Rowe-Schoen
-                <br />
-                <span className="badge badge-ghost badge-sm">
-                  Office Assistant I
-                </span>
-              </td>
-              <td>Crimson</td>
-              <th>
-                <button className="btn btn-ghost btn-xs">details</button>
-              </th>
-            </tr>
-            {/* row 4 */}
-            <tr>
-              <th>
-                <label>
-                  <input type="checkbox" className="checkbox" />
-                </label>
-              </th>
-              <td>
-                <div className="flex items-center space-x-3">
-                  <div className="avatar">
-                    <div className="mask mask-squircle w-12 h-12">
-                      <img
-                        src="/tailwind-css-component-profile-5@56w.png"
-                        alt="Avatar Tailwind CSS Component"
-                      />
-                    </div>
-                  </div>
-                  <div>
-                    <div className="font-bold">Yancy Tear</div>
-                    <div className="text-sm opacity-50">Brazil</div>
-                  </div>
-                </div>
-              </td>
-              <td>
-                Wyman-Ledner
-                <br />
-                <span className="badge badge-ghost badge-sm">
-                  Community Outreach Specialist
-                </span>
-              </td>
-              <td>Indigo</td>
-              <th>
-                <button className="btn btn-ghost btn-xs">details</button>
-              </th>
-            </tr>
-          </tbody>
-          {/* foot */}
-          <tfoot>
-            <tr>
-              <th></th>
-              <th>Name</th>
-              <th>Job</th>
-              <th>Favorite Color</th>
-              <th></th>
-            </tr>
-          </tfoot>
+
+          {/* row 1 */}
+          {addNewToys.map((addNewToy) => (
+            <MyToysRow
+              key={addNewToy?._id}
+              addNewToy={addNewToy}
+              handleDelete={handleDelete}
+            ></MyToysRow>
+          ))}
         </table>
       </div>
     </div>
