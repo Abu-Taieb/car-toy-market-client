@@ -15,7 +15,7 @@ const Category = () => {
     <>
       <div className=" py-10">
         <div className="pb-10">
-          <h2 className="text-center font-bold text-3xl my-10">
+          <h2 className="text-center font-bold text-3xl my-10 text-[#FF0126]">
             Shop by Category
           </h2>
         </div>

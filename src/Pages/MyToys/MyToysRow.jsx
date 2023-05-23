@@ -10,7 +10,7 @@ const MyToysRow = ({ addNewToy, handleDelete, handleUpdate }) => {
     rating,
     quantity,
     message,
-    status
+    status,
   } = addNewToy;
 
   console.log(_id);
@@ -21,7 +21,7 @@ const MyToysRow = ({ addNewToy, handleDelete, handleUpdate }) => {
         <th>
           <button
             onClick={() => handleDelete(_id)}
-            className="btn btn-sm btn-circle"
+            className="btn btn-sm btn-circle bg-[#FF0126] border-0"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -41,12 +41,10 @@ const MyToysRow = ({ addNewToy, handleDelete, handleUpdate }) => {
         </th>
         <td>
           <div className="flex items-center space-x-3">
-            <div className="avatar">
-              <div className="w-25 h-24 rounded">
-                {picture && (
-                  <img src={picture} alt="Avatar Tailwind CSS Component" />
-                )}
-              </div>
+            <div className="w-25 h-25 rounded border p-2">
+              {picture && (
+                <img src={picture} alt="Avatar Tailwind CSS Component" className="box-border w-24"/>
+              )}
             </div>
             <div>
               <div className="font-bold">{toyName}</div>
@@ -65,11 +63,19 @@ const MyToysRow = ({ addNewToy, handleDelete, handleUpdate }) => {
         <td>{quantity}</td>
         <td>{message}</td>
         <th>
-          {
-            status === 'confirm' ? <span className="text-primary">Confirm</span> : <button onClick={() => handleUpdate(_id)} className="btn btn-primary btn-sm">Update</button>
-          }
+          {status === "confirm" ? (
+            <span className="text-success">Confirm</span>
+          ) : (
+            <button
+              onClick={() => handleUpdate(_id)}
+              className="btn btn-success btn-sm"
+            >
+              Update
+            </button>
+          )}
         </th>
       </tr>
+      <hr  />
     </tbody>
   );
 };

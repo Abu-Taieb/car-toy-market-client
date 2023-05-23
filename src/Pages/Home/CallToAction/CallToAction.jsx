@@ -1,7 +1,7 @@
 const CallToAction = () => {
   return (
     <div className="">
-      <h2 className="text-center font-bold text-3xl my-10">Call To Action</h2>
+      <h2 className="text-center font-bold text-3xl my-10 text-[#FF0126]">Call To Action</h2>
       <div className=" bg-gradient-to-r from-[#FF0126] via-purple-500 to-pink-500 p-20 rounded-xl">
         <div className="text-center flex flex-col lg:flex-row justify-center items-center gap-10">
           <div className="w-full lg:w-2/3">

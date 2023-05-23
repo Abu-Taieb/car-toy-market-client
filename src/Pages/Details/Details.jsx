@@ -17,11 +17,11 @@ const Details = () => {
   return (
     <>
       <div className=" bg-base-200 px-10">
-      <h2 className="text-center font-bold text-3xl py-10">Details Information</h2>
+      <h2 className="text-center font-bold text-3xl py-10 text-[#FF0126]">Details Information</h2>
         <div className="card lg:card-side bg-white shadow-xl rounded-xl p-10">
           <div className="mt-12 w-1/2">
             <figure>
-              <img className="rounded-xl" src={picture_url} alt="Album" />
+              <img src={picture_url} alt="Album" className="rounded-xl"/>
             </figure>
           </div>
           <div className="card-body w-1/2">
@@ -37,7 +37,7 @@ const Details = () => {
             <p><span className="font-bold">Description of this Product :</span> {description}</p>
             <div className="card-actions justify-end mt-10">
             <Link to={`/toyadd/${_id}`}>
-              <button className="btn btn-primary">Add Toy</button>
+              <button className="btn bg-[#FF0126] border-0">Add Toy</button>
             </Link>
             </div>
           </div>

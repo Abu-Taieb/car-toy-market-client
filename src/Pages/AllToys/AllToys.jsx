@@ -19,7 +19,7 @@ const AllToys = () => {
 
   return (
     <div className="bg-base-200 px-5">
-      <h2 className="text-center font-bold text-3xl py-10">All Users Toys</h2>
+      <h2 className="text-center font-bold text-3xl py-10 text-[#FF0126]">All Users Toys</h2>
       <div className="overflow-x-auto w-full rounded-xl">
         <table className="table w-full rounded-xl">
           {/* head */}

@@ -53,7 +53,7 @@ const NewToyAdd = () => {
   };
     return (
         <div className="px-10 my-16">
-      <h2 className="text-center font-bold text-3xl my-10">New Toy Add</h2>
+      <h2 className="text-center font-bold text-3xl my-10 text-[#FF0126]">New Toy Add</h2>
       <form onSubmit={addToyHandle}>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center gap-5">
           <input
@@ -112,7 +112,7 @@ const NewToyAdd = () => {
             placeholder="Toy description"
           ></textarea>
         </div>
-        <button className="btn btn-block my-10">Add A Toy</button>
+        <button className="btn btn-block my-10 bg-[#FF0126] border-0">Add A Toy</button>
       </form>
     </div>
     );

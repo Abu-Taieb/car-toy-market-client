@@ -1,22 +1,19 @@
-const AllToysRows = ({ allToy}) => {
+const AllToysRows = ({ allToy }) => {
   console.log(allToy._id);
   const { _id, picture, toyName, categoryName, price, rating, quantity } =
-  allToy;
+    allToy;
 
   console.log(_id);
-
 
   return (
     <tbody>
       <tr>
         <td>
           <div className="flex items-center space-x-3">
-            <div className="avatar">
-              <div className="w-25 h-24 rounded">
-                {picture && (
-                  <img src={picture} alt="Avatar Tailwind CSS Component" />
-                )}
-              </div>
+            <div className="w-25 h-25 rounded border p-2">
+              {picture && (
+                <img src={picture} alt="Avatar Tailwind CSS Component" className="box-border w-24" />
+              )}
             </div>
             <div>
               <div className="font-bold">{toyName}</div>
@@ -28,12 +25,11 @@ const AllToysRows = ({ allToy}) => {
         <td>{rating}</td>
         <td>{quantity}</td>
         <th>
-          <button className="btn btn-primary btn-sm">View Details</button>
+          <button className="btn btn-primary btn-sm bg-[#FF0126] border-0">View Details</button>
         </th>
       </tr>
-      <hr className="border"/>
+      <hr className="border" />
     </tbody>
-
   );
 };
 export default AllToysRows;

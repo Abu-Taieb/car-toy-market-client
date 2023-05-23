@@ -14,7 +14,6 @@ const CategoryCard = ({ catagory }) => {
   };
 
   const { _id, toy_name, picture_url, price, rating } = catagory;
-  console.log(catagory);
 
   return (
     <>
@@ -28,7 +27,7 @@ const CategoryCard = ({ catagory }) => {
           <h2 className="card-title">Rating: {rating}</h2>
           <div className="card-actions justify-end">
             <Link to={`/details/${_id}`}>
-              <button onClick={details} className="btn btn-primary">
+              <button onClick={details} className="btn bg-[#FF0126] border-0 ">
                 View Details
               </button>
             </Link>

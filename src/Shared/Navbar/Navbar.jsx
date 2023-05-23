@@ -18,10 +18,10 @@ const Navbar = () => {
       <div className="navbar bg-base-200 px-5 py-5">
         <div className="navbar-start">
           <div className="dropdown">
-            <label tabIndex={0} className="btn btn-ghost lg:hidden">
+            <label tabIndex={0} className="btn btn-ghost lg:hidden hover:bg-[#FF0126] hover:text-white">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="h-5 w-5"
+                className="h-5 w-5 text-[#FF0126] hover:text-white"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
@@ -38,19 +38,19 @@ const Navbar = () => {
               tabIndex={0}
               className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
             >
-              <li>
+              <li className="font-bold hover:bg-[#FF0126] hover:text-white rounded-md">
                 <Link to={"/"}>Home</Link>
               </li>
-              <li>
+              <li className="font-bold hover:bg-[#FF0126] hover:text-white rounded-md">
                 <Link to={"alltoys"}>All Toys</Link>
               </li>
-              <li>
+              <li className="font-bold hover:bg-[#FF0126] hover:text-white rounded-md">
                 <Link to={"mytoys"}>My Toys</Link>
               </li>
-              <li>
-                <Link to={"addtoys"}>Add A Toys</Link>
+              <li className="font-bold hover:bg-[#FF0126] hover:text-white rounded-md">
+                <Link to={"newtoyadd"}>Add A Toys</Link>
               </li>
-              <li>
+              <li className="font-bold hover:bg-[#FF0126] hover:text-white rounded-md">
                 <Link to={"blogs"}>Blogs</Link>
               </li>
             </ul>
@@ -61,18 +61,18 @@ const Navbar = () => {
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">
-            <li>
+            <li className="font-bold">
               <Link to={"/"}>Home</Link>
             </li>
-            <li>
+            <li className="font-bold hover:bg-[#FF0126] hover:text-white rounded-md">
               <Link to={"alltoys"}>All Toys</Link>
             </li>
             {user?.email ? (
               <>
-                <li>
+                <li className="font-bold hover:bg-[#FF0126] hover:text-white rounded-md">
                   <Link to={"mytoys"}>My Toys</Link>
                 </li>
-                <li>
+                <li className="font-bold hover:bg-[#FF0126] hover:text-white rounded-md">
                   <Link to={"newtoyadd"}>Add A New Toys</Link>
                 </li>
               </>
@@ -80,7 +80,7 @@ const Navbar = () => {
               ""
             )}
 
-            <li>
+            <li className="font-bold hover:bg-[#FF0126] hover:text-white rounded-md">
               <Link to={"blogs"}>Blogs</Link>
             </li>
           </ul>
@@ -95,13 +95,13 @@ const Navbar = () => {
                   </div>
                 </button>
 
-                <button onClick={handleLogOut} className="btn btn-sm ">
+                <button onClick={handleLogOut} className="btn btn-sm bg-[#FF0126] border-0">
                   Log Out
                 </button>
               </div>
             ) : (
               <Link to={"/login"}>
-                <button className="btn">Log In</button>
+                <button className="btn btn-success">Log In</button>
               </Link>
             )}
           </div>

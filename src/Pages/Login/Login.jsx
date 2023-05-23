@@ -94,7 +94,7 @@ const Login = () => {
               />
             </div>
             <div className="form-control mt-6">
-              <button className="btn btn-primary">Login</button>
+              <button className="btn btn-success">Login</button>
             </div>
             <p className="text-green-600">{success}</p>
             <p className="text-red-600">{error}</p>
@@ -104,7 +104,7 @@ const Login = () => {
             <div className="flex justify-evenly my-3">
               <Link
                 onClick={handleGoogleLogin}
-                className="flex gap-2 border rounded-md p-2 items-center"
+                className="flex gap-2 border border-success rounded-md p-2 items-center"
               >
                 <FaGoogle />
                 Google

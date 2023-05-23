@@ -1,7 +1,7 @@
 const Blogs = () => {
   return (
     <div className="bg-base-200 px-5">
-      <h2 className="text-center font-bold text-3xl py-10">
+      <h2 className="text-center font-bold text-3xl py-10 text-[#FF0126]">
         Our Blogs
       </h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 py-10">
