@@ -8,7 +8,7 @@ const MyToys = () => {
 
   console.log(addNewToys);
 
-  const url = `http://localhost:5000/addNewToy?email=${user?.email}`;
+  const url = `https://car-toy-market-server.vercel.app/addNewToy?email=${user?.email}`;
   useEffect(() => {
     fetch(url)
       .then((res) => res.json())
@@ -18,7 +18,7 @@ const MyToys = () => {
   const handleDelete = (id) => {
     const proceed = confirm("Are you sure you want to delete?");
     if (proceed) {
-      fetch(`http://localhost:5000/addNewToy/${id}`, {
+      fetch(`https://car-toy-market-server.vercel.app/addNewToy/${id}`, {
         method: "DELETE",
       })
         .then((res) => res.json())
@@ -33,6 +33,31 @@ const MyToys = () => {
           }
         });
     }
+  };
+
+  // Update
+  const handleUpdate = (id) => {
+    fetch(`https://car-toy-market-server.vercel.app/addNewToy/${id}`, {
+      method: "PATCH",
+      headers: {
+        "content-type": "application/json",
+      },
+      body: JSON.stringify({ status: "confirm" }),
+    })
+      .then((res) => res.json())
+      .then((data) => {
+        console.log(data);
+        if (data.modifiedCount > 0) {
+          //Update Toy
+          const remaining = addNewToys.filter(
+            (addNewToy) => addNewToy._id !== id
+          );
+          const updated = addNewToys.find((addNewToy) => addNewToy._id === id);
+          updated.status = "confirm";
+          const newToy = [updated, ...remaining];
+          setAddNewToys(newToy);
+        }
+      });
   };
 
   return (
@@ -61,6 +86,7 @@ const MyToys = () => {
               key={addNewToy?._id}
               addNewToy={addNewToy}
               handleDelete={handleDelete}
+              handleUpdate={handleUpdate}
             ></MyToysRow>
           ))}
         </table>

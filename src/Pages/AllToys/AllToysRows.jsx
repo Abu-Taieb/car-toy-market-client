@@ -5,6 +5,7 @@ const AllToysRows = ({ allToy}) => {
 
   console.log(_id);
 
+
   return (
     <tbody>
       <tr>

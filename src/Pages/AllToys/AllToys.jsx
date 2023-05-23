@@ -8,7 +8,7 @@ const AllToys = () => {
 
   console.log(user);
 
-  const url = `http://localhost:5000/addNewToy`;
+  const url = `https://car-toy-market-server.vercel.app/addNewToy`;
   useEffect(() => {
     fetch(url)
       .then((res) => res.json())

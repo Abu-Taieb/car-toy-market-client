@@ -1,4 +1,4 @@
-const MyToysRow = ({ addNewToy, handleDelete }) => {
+const MyToysRow = ({ addNewToy, handleDelete, handleUpdate }) => {
   const {
     _id,
     picture,
@@ -10,6 +10,7 @@ const MyToysRow = ({ addNewToy, handleDelete }) => {
     rating,
     quantity,
     message,
+    status
   } = addNewToy;
 
   console.log(_id);
@@ -64,7 +65,9 @@ const MyToysRow = ({ addNewToy, handleDelete }) => {
         <td>{quantity}</td>
         <td>{message}</td>
         <th>
-          <button className="btn btn-primary btn-sm">Update</button>
+          {
+            status === 'confirm' ? <span className="text-primary">Confirm</span> : <button onClick={() => handleUpdate(_id)} className="btn btn-primary btn-sm">Update</button>
+          }
         </th>
       </tr>
     </tbody>

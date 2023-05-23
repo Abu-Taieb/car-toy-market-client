@@ -14,6 +14,7 @@ const CategoryCard = ({ catagory }) => {
   };
 
   const { _id, toy_name, picture_url, price, rating } = catagory;
+  console.log(catagory);
 
   return (
     <>
