@@ -1,8 +1,9 @@
 import { useLoaderData } from "react-router-dom";
+import useTitle from "../../hooks/useTitle";
 
 const ToyAdd = () => {
   const toy = useLoaderData();
-
+  useTitle('Bookmark')
   const {
     toy_name,
     picture_url,
@@ -34,7 +35,7 @@ const ToyAdd = () => {
               type="text"
               placeholder="Photo URL"
                 defaultValue={picture_url}
-              className="file-input file-input-bordered file-input-info w-full"
+              className="input input-bordered input-info w-full"
             />
             <input
               type="text"

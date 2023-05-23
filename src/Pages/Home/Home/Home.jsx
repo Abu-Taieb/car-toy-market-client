@@ -4,8 +4,10 @@ import Banner from "../Banner/Banner";
 import Category from "../Category/Category";
 import CallToAction from "../CallToAction/CallToAction";
 import Contact from "../Contact/Contact";
+import useTitle from "../../../hooks/useTitle";
 
 const Home = () => {
+  useTitle('Home')
   return (
     <>
       <div className="bg-base-200 px-5">

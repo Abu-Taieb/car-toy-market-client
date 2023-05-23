@@ -1,9 +1,10 @@
 import { useContext } from "react";
 import { AuthContext } from "../Provider/AuthProvider";
+import useTitle from "../../hooks/useTitle";
 
 const NewToyAdd = () => {
     const { user } = useContext(AuthContext);
-
+    useTitle('Add Toys')
   const addToyHandle = (event) => {
     event.preventDefault();
 
@@ -60,7 +61,7 @@ const NewToyAdd = () => {
             type="text"
             name="link"
             placeholder="Photo URL"
-            className="file-input file-input-bordered file-input-info w-full"
+            className="input input-bordered input-info w-full"
           />
           <input
             type="text"

@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-// import logo from "../../assets/car-toy-market.png";
+import logo from "../../../public/logo.png";
 import { useContext } from "react";
 import { AuthContext } from "../../Pages/Provider/AuthProvider";
 
@@ -56,7 +56,7 @@ const Navbar = () => {
             </ul>
           </div>
           <Link to={"/"}>
-            <img src="https://ibb.co/jLQ14v7" alt="" />
+            <img src={logo} alt="Car Toy Market" className="w-32" />
           </Link>
         </div>
         <div className="navbar-center hidden lg:flex">

@@ -2,6 +2,7 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 import { FaGoogle } from "react-icons/fa";
 import { useContext, useState } from "react";
 import { AuthContext } from "../Provider/AuthProvider";
+import useTitle from "../../hooks/useTitle";
 // import { sendEmailVerification } from "firebase/auth";
 
 const Login = () => {
@@ -12,6 +13,7 @@ const Login = () => {
   const location = useLocation();
 
   const navigate = useNavigate();
+  useTitle('Login')
   const from = location.state?.from?.pathname || '/';
 
   const handleGoogleLogin = () => {

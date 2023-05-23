@@ -1,11 +1,12 @@
 import { useContext, useState } from "react";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../Provider/AuthProvider";
+import useTitle from "../../hooks/useTitle";
 
 const Signup = () => {
   const [error, setError] = useState("");
   const [success, setSuccess] = useState("");
-
+  useTitle("Register");
   const { createUser } = useContext(AuthContext);
 
   const handleSignUp = (event) => {
@@ -21,7 +22,7 @@ const Signup = () => {
       .then((result) => {
         const user = result.user;
         console.log(user);
-        setSuccess('User registration successful');
+        setSuccess("User registration successful");
         form.reset();
       })
       .catch((error) => {
@@ -29,8 +30,8 @@ const Signup = () => {
       });
 
     // Validation
-    setError('');
-    setSuccess('');
+    setError("");
+    setSuccess("");
 
     if (!/(?=.*[A-Z])/.test(password)) {
       setError("Please add at least one uppercase.");
@@ -42,9 +43,6 @@ const Signup = () => {
       setError("Password minimum 6 character.");
       return;
     }
-
-
-
   };
 
   return (
@@ -95,7 +93,10 @@ const Signup = () => {
               <label className="label">
                 <span className="label-text">Photo URL</span>
               </label>
-              <input type="file" className="file-input file-input-bordered file-input-sm w-full max-w-xs" />
+              <input
+                type="file"
+                className="file-input file-input-bordered file-input-sm w-full max-w-xs"
+              />
             </div>
             <div className="form-control mt-6">
               <button className="btn btn-primary">Register</button>

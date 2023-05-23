@@ -1,11 +1,12 @@
 import { useContext, useEffect, useState } from "react";
 import { AuthContext } from "../Provider/AuthProvider";
 import AllToysRows from "./AllToysRows";
+import useTitle from "../../hooks/useTitle";
 
 const AllToys = () => {
   const { user } = useContext(AuthContext);
   const [allToys, setAllToys] = useState([]);
-
+  useTitle('All Toys')
   console.log(user);
 
   const url = `https://car-toy-market-server.vercel.app/addNewToy`;

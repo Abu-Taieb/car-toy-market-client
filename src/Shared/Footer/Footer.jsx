@@ -1,4 +1,4 @@
-import logo from "../../assets/car-toy-market.png";
+import logo from "../../../public/logo.png";
 import { FaFacebook, FaLinkedin, FaTwitch, FaYoutube } from "react-icons/fa";
 
 const Footer = () => {
